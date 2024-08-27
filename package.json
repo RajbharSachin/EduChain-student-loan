@@ -4,7 +4,7 @@
   "description": "Educhain Student Loans DApp",
   "main": "truffle-config.js",
   "scripts": {
-    "build": "npm run compile && npm run migrate",
+    "build": "npm run compile",
     "compile": "truffle compile",
     "migrate": "truffle migrate --network development",
     "start": "lite-server"
