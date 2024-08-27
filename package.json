@@ -1,18 +1,23 @@
 {
   "name": "educhain-student-loans",
   "version": "1.0.0",
-  "description": "",
+  "description": "Educhain Student Loans DApp",
   "main": "truffle-config.js",
-  "directories": {
-    "test": "test"
-  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run compile && npm run migrate",
+    "compile": "truffle compile",
+    "migrate": "truffle migrate --network development",
+    "start": "lite-server"
+  },
+  "dependencies": {
+    "@openzeppelin/contracts": "^4.9.3",
+    "lite-server": "^2.6.1",
+    "truffle": "^5.6.0"
+  },
+  "devDependencies": {
+    "netlify-cli": "^12.3.0"
   },
   "keywords": [],
   "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@openzeppelin/contracts": "^4.9.3"
-  }
+  "license": "ISC"
 }
